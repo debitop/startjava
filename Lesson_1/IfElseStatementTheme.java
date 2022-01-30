@@ -78,7 +78,7 @@ public class IfElseStatementTheme {
          System.out.println();
 
       //Определение буквы или символа по их коду
-  //       char letter = ‘u005A’;
+  //       char letter = ‘/u005A’;
   //       System.out.println("Определение буквы или символа по их коду " + letter);
 
          System.out.println();
@@ -106,17 +106,6 @@ public class IfElseStatementTheme {
          System.out.println();
 
       // Определение оценки по предметам
-// студент получил итоговые % по предметам:
-// история 59%
-// программирование 91%
-// определите оценки по каждому предмету:
-// > 60% - 3
-// > 73% - 4
-// > 91% - 5
-// выведите в консоль:
-// оценку и напротив предмет
-// средний балл по предметам
-// средний % по предметам
          int historyPercent = 59;
          int programPercent = 91;
          int historyBal = 0;
@@ -146,6 +135,60 @@ public class IfElseStatementTheme {
          System.out.println("Средний % по предметам = " + (historyPercent + programPercent) / 2);
          System.out.println("");
 
+      // Расчет прибыли (убытка)
+         int arendaInMonth = 5000;
+         int salesInMonth = 15000;
+         int costPrice = 9000;
+         int dohodInYear = (salesInMonth - arendaInMonth - costPrice) * 12;
+         char dohod = ' ';
+         if (dohodInYear > 0){
+            dohod = '+';
+         }
+         System.out.println("Расчет прибыли (убытка)");
+         System.out.println("Ваша прибыль (убыток) составил " + dohod + dohodInYear);
+         System.out.println("");
+
+      // Определение существования треугольника со сторонами 5, 5, 9 и одним из углов 90 градусов
+         int storonaOne = 5;
+         int storonaTwo = 5;
+         int storonaThree = 9;
+         int max = storonaOne;
+         int min1 = 0;
+         int min2 = 0;
+         char slashPravo = 47;
+         char nijnPodcherk = 95;
+         char vertikal = 40;
+
+         if (storonaTwo > storonaOne){
+            max = storonaTwo;
+            min1 = storonaOne;
+            if (storonaThree > storonaTwo){
+               min2 = storonaTwo;
+               max = storonaThree;
+            } else {
+               min2 = storonaThree;
+            }
+         } else if (storonaThree > storonaOne){
+            min1 = storonaTwo;
+            max = storonaThree;
+            min2 = storonaOne;
+         } else {
+            min1 = storonaTwo;
+            min2 = storonaThree;
+         }
+         System.out.println("Определение существования треугольника со сторонами 5, 5, 9 и одним из углов 90 градусов");
+         if (min1 * min1 + min2 * min2 == max * max){
+            System.out.println("Треугольник со сторонами 5, 5, 9 и одним из углов 90 градусов существует");
+         } else {
+            System.out.println("Треугольник со сторонами 5, 5, 9 и одним из углов 90 градусов НЕ существует");
+         }
+         System.out.println("Площадь треугольника равна " + (min1 * min1 + min2 * min2) / 2);
+         System.out.println("");
+// определите, может ли существовать треугольник с такими длинами сторон
+// найдите его площадь
+// нарисуйте треугольник в консоли, используя символы | _ \
+// количество | и _ должно соответствовать длинам его сторон
+// отобразите все полученные данные в консоль
    }
 }
 

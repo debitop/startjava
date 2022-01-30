@@ -1,6 +1,6 @@
 public class VariablesTheme {
    public static void main(String[] args){
-      //???? Proverka Создание переменных и вывод их значений на консоль
+      //Создание переменных и вывод их значений на консоль
          boolean havePK = true;
          byte numOfMonitor = 1;
          short versionOfWindows = 11;
