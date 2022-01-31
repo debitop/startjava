@@ -1,6 +1,6 @@
 public class VariablesTheme {
    public static void main(String[] args){
-      //Создание переменных и вывод их значений на консоль
+         //Создание переменных и вывод их значений на консоль
          boolean havePK = true;
          byte numOfMonitor = 1;
          short versionOfWindows = 11;
@@ -20,7 +20,7 @@ public class VariablesTheme {
          System.out.println("double = " + cpuVolt);
          System.out.println();
 
-      //Расчет стоимости товара со скидкой
+         //Расчет стоимости товара со скидкой
          int x = 100;
          int y = 200;
          System.out.println("Расчет стоимости товара со скидкой");
@@ -28,7 +28,7 @@ public class VariablesTheme {
          System.out.println((x + y) / 10 + " сумма скидки");
          System.out.println();
       
-      //Вывод на консоль слова JAVA
+         //Вывод на консоль слова JAVA
          System.out.println("Вывод на консоль слова JAVA");
          System.out.println("   J    a  v     v  a");
          System.out.println("   J   a a  v   v  a a");
@@ -36,7 +36,7 @@ public class VariablesTheme {
          System.out.println(" JJ  a     a  V  a     a");
          System.out.println();
 
-      //Отображение min и max значений числовых типов данных
+         //Отображение min и max значений числовых типов данных
          byte a = 127;
          short b = 32767;
          int c = 2147483647;
@@ -66,7 +66,7 @@ public class VariablesTheme {
          System.out.println(f - 1);
          System.out.println();
 
-      //Перестановка значений переменных
+         //Перестановка значений переменных
          int peremOne = 111;
          int peremTwo = 999;
          System.out.println("Перестановка значений переменных");
@@ -79,7 +79,7 @@ public class VariablesTheme {
          System.out.println("peremTwo = " + peremTwo);
          System.out.println();
 
-      //Вывод ASCII-символов и их кодов
+         //Вывод ASCII-символов и их кодов
          int chisloOne = 35;
          int chisloTwo = 38;
          int chisloThree = 64;
@@ -93,14 +93,14 @@ public class VariablesTheme {
          System.out.println("95 = " + (char) chisloFive);
          System.out.println();
 
-      //Произведение и сумма цифр числа 345
+         //Произведение и сумма цифр числа 345
          int num = 345;
          System.out.println("Произведение и сумма цифр числа 345");
          System.out.println("произведение цифр = " + 3 * 4 * 5);
          System.out.println("сумма цифр = " + (3 + 4 + 5));
          System.out.println();
 
-      //Вывод на консоль ascii-арт Дюка
+         //Вывод на консоль ascii-арт Дюка
          char slashLevo = 92;
          char slashPravo = 47;
          char skobkaLevo = 41;
@@ -115,7 +115,7 @@ public class VariablesTheme {
             slashLevo + nijnPodcherk + nijnPodcherk + nijnPodcherk + nijnPodcherk + slashLevo);
          System.out.println();
 
-      //Отображение сотен, десятков, единиц числа 123
+         //Отображение сотен, десятков, единиц числа 123
          int nashNumber = 123;
          int soten = 123 / 100;
          int desiatkov = (nashNumber - soten * 100) / 10;
@@ -125,7 +125,7 @@ public class VariablesTheme {
          System.out.println("единиц " + (nashNumber - soten * 100 - desiatkov * 10));
          System.out.println();
 
-      //Преобразование секунд 86399
+         //Преобразование секунд 86399
          int time = 86399;
          int sekInHour = 60 * 60;
          int hours = time / sekInHour;
