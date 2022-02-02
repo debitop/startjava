@@ -21,11 +21,11 @@ public class VariablesTheme {
          System.out.println();
 
          //Расчет стоимости товара со скидкой
-         int x = 100;
-         int y = 200;
+         int priceX = 100;
+         int priceY = 200;
          System.out.println("Расчет стоимости товара со скидкой");
-         System.out.println( (x + y) * 9 / 10 + " итоговая сумма товаров со скидкой");
-         System.out.println((x + y) / 10 + " сумма скидки");
+         System.out.println( (priceX + priceY) * (100-11) / 100 + " итоговая сумма товаров со скидкой");
+         System.out.println((priceX + priceY) * 11 / 100 + " сумма скидки");
          System.out.println();
       
          //Вывод на консоль слова JAVA
@@ -50,79 +50,94 @@ public class VariablesTheme {
          System.out.println(d);
          System.out.println(e);
          System.out.println(f);
-         System.out.println("прибавляем 1");
-         System.out.println(a + 1);
-         System.out.println(b + 1);
-         System.out.println(c + 1);
-         System.out.println(d + 1);
-         System.out.println(e + 1);
-         System.out.println(f + 1);
-         System.out.println("убавляем 1");
-         System.out.println(a - 1);
-         System.out.println(b - 1);
-         System.out.println(c - 1);
-         System.out.println(d - 1);
-         System.out.println(e - 1);
-         System.out.println(f - 1);
+         System.out.println("инкрементируем");
+         a++;
+         b++;
+         c++;
+         d++;
+         e++;
+         f++;
+         System.out.println(a);
+         System.out.println(b);
+         System.out.println(c);
+         System.out.println(d);
+         System.out.println(e);
+         System.out.println(f);
+         System.out.println("декрементируем");
+         a--;
+         b--;
+         c--;
+         d--;
+         e--;
+         f--;
+         System.out.println(a);
+         System.out.println(b);
+         System.out.println(c);
+         System.out.println(d);
+         System.out.println(e);
+         System.out.println(f);
          System.out.println();
 
          //Перестановка значений переменных
-         int peremOne = 111;
-         int peremTwo = 999;
+         int variable1 = 111;
+         int variable2 = 999;
          System.out.println("Перестановка значений переменных");
-         System.out.println("peremOne = " + peremOne);
-         System.out.println("peremTwo = " + peremTwo);
-         int peremTree = peremOne;
-         peremOne = peremTwo;
-         peremTwo = peremTree;
-         System.out.println("peremOne = " + peremOne);
-         System.out.println("peremTwo = " + peremTwo);
+         System.out.println("variable1 = " + variable1);
+         System.out.println("variable2 = " + variable2);
+         int variable3 = variable1;
+         variable1 = variable2;
+         variable2 = variable3;
+         System.out.println("variable1 = " + variable1);
+         System.out.println("variable2 = " + variable2);
          System.out.println();
 
          //Вывод ASCII-символов и их кодов
-         int chisloOne = 35;
-         int chisloTwo = 38;
-         int chisloThree = 64;
-         int chisloFour = 94;
-         int chisloFive = 95;
+         int number1 = 35;
+         int number2 = 38;
+         int number3 = 64;
+         int number4 = 94;
+         int number5 = 95;
          System.out.println("Вывод ASCII-символов и их кодов");
-         System.out.println("35 = " + (char) chisloOne);
-         System.out.println("38 = " + (char) chisloTwo);
-         System.out.println("64 = " + (char) chisloThree);
-         System.out.println("94 = " + (char) chisloFour);
-         System.out.println("95 = " + (char) chisloFive);
+         System.out.println("35 = " + (char) number1);
+         System.out.println("38 = " + (char) number2);
+         System.out.println("64 = " + (char) number3);
+         System.out.println("94 = " + (char) number4);
+         System.out.println("95 = " + (char) number5);
          System.out.println();
 
          //Произведение и сумма цифр числа 345
          int num = 345;
-         System.out.println("Произведение и сумма цифр числа 345");
-         System.out.println("произведение цифр = " + 3 * 4 * 5);
-         System.out.println("сумма цифр = " + (3 + 4 + 5));
-         System.out.println();
+         int digit1 = num % 10;
+         int digit2 = (num / 10) % 10;
+         int digit3 = num / 100;
+         System.out.println("Произведение и сумма цифр числа " + num);
+         System.out.println("произведение цифр = " + digit1 * digit2 * digit3);
+         System.out.println("сумма цифр = " + (digit1 + digit2 + digit3));
+         System.out.println("");
 
          //Вывод на консоль ascii-арт Дюка
-         char slashLevo = 92;
-         char slashPravo = 47;
-         char skobkaLevo = 41;
-         char skobkaPravo = 40;
-         char nijnPodcherk = 95;
+         char slashLeft = 92;
+         char slashRight = 47;
+         char braketLeft = 41;
+         char braketRight = 40;
+         char bar = 95;
+         char gap = 32;
          System.out.println("Вывод на консоль ascii-арт Дюка");
-         System.out.println("       " + slashPravo + " " + slashLevo);
-         System.out.println("      " + slashPravo + "   " + slashLevo);
-         System.out.println("     " + slashPravo + nijnPodcherk + skobkaPravo + " " + skobkaLevo + nijnPodcherk + slashLevo);
-         System.out.println("    " + slashPravo + "       " + slashLevo);
-         System.out.println("   " + slashPravo + nijnPodcherk + nijnPodcherk + nijnPodcherk + slashPravo + 
-            slashLevo + nijnPodcherk + nijnPodcherk + nijnPodcherk + nijnPodcherk + slashLevo);
+         System.out.println("" + gap + gap + gap + gap + gap + gap + gap + slashRight + gap + slashLeft);
+         System.out.println("" + gap + gap + gap + gap + gap + gap + slashRight + gap + gap + gap + slashLeft);
+         System.out.println("" + gap + gap + gap + gap + gap + slashRight + bar + braketRight + gap + braketLeft + bar + slashLeft);
+         System.out.println("" + gap + gap + gap + gap + slashRight + gap + gap + gap + gap + gap + gap + gap + slashLeft);
+         System.out.println("" + gap + gap + gap + slashRight + bar + bar + bar + slashRight + slashLeft + bar + bar + bar + bar + slashLeft);
          System.out.println();
 
          //Отображение сотен, десятков, единиц числа 123
-         int nashNumber = 123;
-         int soten = 123 / 100;
-         int desiatkov = (nashNumber - soten * 100) / 10;
-         System.out.println("Отображение сотен, десятков, единиц числа 123");
-         System.out.println("сотен " + soten);
-         System.out.println("десятков " + desiatkov);
-         System.out.println("единиц " + (nashNumber - soten * 100 - desiatkov * 10));
+         int ourNumber = 123;
+         int hundred = 123 / 100;
+         int ten = (ourNumber - hundred * 100) / 10;
+         System.out.println("Отображение сотен, десятков, единиц числа " + ourNumber);
+         System.out.println("сотен " + hundred);
+         System.out.println("десятков " + ten);
+         System.out.println("единиц " + (ourNumber - hundred * 100 - ten * 10));
          System.out.println();
 
          //Преобразование секунд 86399
