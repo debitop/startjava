@@ -142,45 +142,45 @@ public class IfElseStatementTheme {
          System.out.println("");
 
          // Расчет прибыли (убытка)
-         int arendaInMonth = 5000;
+         int rentInMonth = 5000;
          int salesInMonth = 15000;
          int costPrice = 9000;
-         int dohodInYear = (salesInMonth - arendaInMonth - costPrice) * 12;
-         char dohod = ' ';
-         if (dohodInYear > 0){
-            dohod = '+';
+         int incomeInYear = (salesInMonth - rentInMonth - costPrice) * 12;
+         char income = ' ';
+         if (incomeInYear > 0){
+            income = '+';
          }
          System.out.println("Расчет прибыли (убытка)");
-         System.out.println("Ваша прибыль (убыток) составил " + dohod + dohodInYear);
+         System.out.println("Ваша прибыль (убыток) составил " + income + incomeInYear);
          System.out.println("");
 
          // Определение существования треугольника со сторонами 5, 5, 9 и одним из углов 90 градусов
-         int storonaOne = 5;
-         int storonaTwo = 5;
-         int storonaThree = 9;
-         int max = storonaOne;
+         int side1 = 5;
+         int side2 = 5;
+         int side3 = 9;
+         int max = side1;
          int min1 = 0;
          int min2 = 0;
-         char slashPravo = 47;
-         char nijnPodcherk = 95;
-         char vertikal = 40;
+         char slashRight = 92;
+         char bar = 95;
+         char vertical = 124;
 
-         if (storonaTwo > storonaOne){
-            max = storonaTwo;
-            min1 = storonaOne;
-            if (storonaThree > storonaTwo){
-               min2 = storonaTwo;
-               max = storonaThree;
+         if (side2 > side1){
+            max = side2;
+            min1 = side1;
+            if (side3 > side2){
+               min2 = side2;
+               max = side3;
             } else {
-               min2 = storonaThree;
+               min2 = side3;
             }
-         } else if (storonaThree > storonaOne){
-            min1 = storonaTwo;
-            max = storonaThree;
-            min2 = storonaOne;
+         } else if (side3 > side1){
+            min1 = side2;
+            max = side3;
+            min2 = side1;
          } else {
-            min1 = storonaTwo;
-            min2 = storonaThree;
+            min1 = side2;
+            min2 = side3;
          }
          System.out.println("Определение существования треугольника со сторонами 5, 5, 9 и одним из углов 90 градусов");
          if (min1 * min1 + min2 * min2 == max * max){
@@ -188,27 +188,20 @@ public class IfElseStatementTheme {
          } else {
             System.out.println("Треугольник со сторонами 5, 5, 9 и одним из углов 90 градусов НЕ существует");
          }
-         System.out.println("Площадь треугольника равна " + (min1 * min1 + min2 * min2) / 2);
-         
+         System.out.println("Площадь треугольника равна " + (min1 + min2) / 2);
+         System.out.println("" + vertical + slashRight);
+         System.out.println("" + vertical + " " + slashRight);
+         System.out.println("" + vertical + "  " + slashRight);
+         System.out.println("" + vertical + "   " + slashRight);
+         System.out.println("" + vertical + "    " + slashRight);
+         System.out.println("" + bar + bar + bar + bar + bar);
          System.out.println("");
-// определите, может ли существовать треугольник с такими длинами сторон
-// найдите его площадь
-// нарисуйте треугольник в консоли, используя символы | _ \
-// количество | и _ должно соответствовать длинам его сторон
-// отобразите все полученные данные в консоль
 
-
-      // Подсчет количества банкнот
-// пусть имеется сумма, равная 567
-// подсчитайте, с помощью какого количества банкнот ее можно получить
-// при этом доступны банкноты следующего номинала: 1, 10, 50
-// также проведите обратный расчет начальной суммы по полученному количеству номиналов банкнот
-// выведите в консоль номиналы банкнот, требуемое их количество и подсчитанную исходную сумму
-
-         int summ = 567;
+         // Подсчет количества банкнот
+         int sum = 567;
          int banknote50 = 576 / 50;
-         int banknote10 = (summ - banknote50 * 50) / 10;
-         int banknote01 = summ - banknote50 * 50 - banknote10 * 10;
+         int banknote10 = (sum - banknote50 * 50) / 10;
+         int banknote01 = sum % 10;
          System.out.println("сумму 576 можно получить с помощью " + banknote50 + " банкнот номиналом 50, " + banknote10 + " банкноты номиналом 10, и " + banknote01 + " банкнот номиналом 1");
          System.out.println(banknote50 + "*50+" + banknote10 + "*10+" + banknote01 + " = " + (banknote50 * 50 + banknote10 * 10 + banknote01));
    }
