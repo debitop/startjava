@@ -1,17 +1,24 @@
 public class IfElseStatementTheme {
    public static void main(String[] args){
-      //Перевод псевдокода на язык Java
+         //Перевод псевдокода на язык Java
          int age = 55;
          boolean manSex = true;
+         float height = 1.60f;
          char firstLetterName = "Имя".charAt(0);
          System.out.println("Перевод псевдокода на язык Java");
          if (age > 20) {
             System.out.println("Ваш возраст больше 20");
          } else {
-            System.out.println("Ваш возраст меньше или равен " + age);
+            System.out.println("Ваш возраст меньше или равен 20");
          }
          if (!manSex) {
             System.out.println("Ваш пол - женский");
+         }
+         if (height < 1.80){
+            System.out.println("Ваш рост меньше 1.80");
+         }
+         else {
+            System.out.println("Ваш рост больше или равен 1.80");
          }
          if (firstLetterName == 'M') {
             System.out.println("Ваше имя начинается на букву M");
@@ -22,7 +29,7 @@ public class IfElseStatementTheme {
          }
          System.out.println();
 
-      //Поиск максимального и минимального числа
+         //Поиск максимального и минимального числа
          int numOne = 15;
          int numTwo = 30;
          System.out.println("Поиск максимального и минимального числа");
@@ -33,12 +40,12 @@ public class IfElseStatementTheme {
          }
          System.out.println();
 
-      //Работа с числом 23
+         //Работа с числом 23
          int numThree = 23;
          System.out.println("Работа с числом 23");
          if (numThree == 0){
             System.out.print("ноль ");
-         } else if (numThree%2 == 0){
+         } else if (numThree % 2 == 0){
             System.out.print("четное ");
          } else {
             System.out.print("не четное ");
@@ -50,34 +57,35 @@ public class IfElseStatementTheme {
          }
          System.out.println();
 
-      //Поиск общей цифры в числах 175 и 126
-         int peremOne = 175;
-         int peremTwo = 126;
-         int sotenOne = peremOne / 100;
-         int sotenTwo = peremTwo / 100;
-         int decOne = peremOne / 10;
-         int decTwo = peremTwo / 10;
-         int edOne = peremOne - sotenOne * 100 - decOne * 10;
-         int edTwo = peremTwo - sotenTwo * 100 - decTwo * 10;
+         //Поиск общей цифры в числах 175 и 126
+         int var1 = 175;
+         int var2 = 126;
+         int hundred1 = var1 / 100;
+         int hundred2 = var2 / 100;
+         int ten1 = (var1 - hundred1 * 100) / 10;
+         int ten2 = (var2 - hundred2 * 100) / 10;
+         int one1 = var1 % 10;
+         int one2 = var2 % 10;
+         
          System.out.println("Поиск общей цифры в числах 175 и 126");
-         if (sotenOne == sotenTwo) {
-            System.out.println("Одинаковых сотен " + sotenOne);
+         if (hundred1 == hundred2) {
+            System.out.println("Одинаковых сотен " + hundred1);
          } else{
             System.out.println("Нет одинаковых сотен");
          }
-         if (decOne == decTwo) {
-            System.out.println("Одинаковых десятков " + decOne);
+         if (ten1 == ten2) {
+            System.out.println("Одинаковых десятков " + ten1);
          } else{
             System.out.println("Нет одинаковых десятков");
          }
-         if (edOne == edTwo) {
-            System.out.println("Одинаковых единиц " + edOne);
+         if (one1 == one2) {
+            System.out.println("Одинаковых единиц " + one1);
          } else{
             System.out.println("Нет одинаковых единиц");
          }
          System.out.println();
 
-      //Определение буквы или символа по их коду
+         //Определение буквы или символа по их коду
          char aCharacter = '\u005A';
          System.out.println("Определение буквы или символа по их коду \u005A");
          if ((aCharacter > 64 && aCharacter < 91) || (aCharacter > 96 && aCharacter < 123)){
@@ -89,51 +97,51 @@ public class IfElseStatementTheme {
          }
          System.out.println("");
 
-      // Определение суммы вклада и начисленных банком %
-         int summVklada = 300000;
-         int procent = 0;
-         if (summVklada < 100000){
-            procent = summVklada * 5 / 100;
-         } else if (summVklada > 300000){
-            procent = summVklada * 10 / 100;
+         // Определение суммы вклада и начисленных банком %
+         int sumDeposit = 300000;
+         int percent = 0;
+         if (sumDeposit < 100000){
+            percent = sumDeposit * 5 / 100;
+         } else if (sumDeposit > 300000){
+            percent = sumDeposit * 10 / 100;
          } else {
-            procent = summVklada * 7 / 100;
+            percent = sumDeposit * 7 / 100;
          }
          System.out.println("Определение суммы вклада и начисленных банком %");
-         System.out.println("Сумма вклада = " + summVklada + ", начисленный процент = " + procent + ", итоговая сумма с % = " + (summVklada + procent));
+         System.out.println("Сумма вклада = " + sumDeposit + ", начисленный процент = " + percent + ", итоговая сумма с % = " + (sumDeposit + percent));
          System.out.println();
 
-      // Определение оценки по предметам
+         // Определение оценки по предметам
          int historyPercent = 59;
          int programPercent = 91;
-         int historyBal = 0;
-         int programBal = 0;
+         int historyScore = 0;
+         int programScore = 0;
          System.out.println("Определение оценки по предметам");
          if (historyPercent > 91) {
-            historyBal = 5;
+            historyScore = 5;
          } else if(historyPercent > 73){
-            historyBal = 4;
+            historyScore = 4;
          } else if (historyPercent > 59){
-            historyBal = 3;
+            historyScore = 3;
          } else {
-            historyBal = 2;
+            historyScore = 2;
          }
          if (programPercent > 91) {
-            programBal = 5;
+            programScore = 5;
          } else if(programPercent > 73){
-            programBal = 4;
+            programScore = 4;
          } else if (programPercent > 59){
-            programBal = 3;
+            programScore = 3;
          } else {
-            programBal = 2;
+            programScore = 2;
          }
-         System.out.println(historyBal + " ваша оценка по истории");
-         System.out.println(programBal + " ваша оценка по программированию");
-         System.out.println("Средний бал по предметам = " + (historyBal + programBal) / 2);
+         System.out.println(historyScore + " ваша оценка по истории");
+         System.out.println(programScore + " ваша оценка по программированию");
+         System.out.println("Средний бал по предметам = " + (historyScore + programScore) / 2);
          System.out.println("Средний % по предметам = " + (historyPercent + programPercent) / 2);
          System.out.println("");
 
-      // Расчет прибыли (убытка)
+         // Расчет прибыли (убытка)
          int arendaInMonth = 5000;
          int salesInMonth = 15000;
          int costPrice = 9000;
@@ -146,7 +154,7 @@ public class IfElseStatementTheme {
          System.out.println("Ваша прибыль (убыток) составил " + dohod + dohodInYear);
          System.out.println("");
 
-      // Определение существования треугольника со сторонами 5, 5, 9 и одним из углов 90 градусов
+         // Определение существования треугольника со сторонами 5, 5, 9 и одним из углов 90 градусов
          int storonaOne = 5;
          int storonaTwo = 5;
          int storonaThree = 9;
