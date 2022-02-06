@@ -21,10 +21,9 @@ public class Cycle {
         int sum = 0;
         int num1 = 11;
         do {
-        sum = sum + num1;
-        num1 = num1 + 2;
-        }
-            while(num1 <= 20);
+        sum += num1;
+        num1 += 2;
+        } while(num1 <= 20);
         System.out.println(sum);
     }
 }
